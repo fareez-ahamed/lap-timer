@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 void main() => runApp(new MyApp());
 
@@ -44,6 +45,15 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  Timer _timer;
+
+  _MyHomePageState() {
+    _timer = new Timer.periodic(new Duration(seconds: 1), (timer) {
+      setState(() {
+        _counter++;
+      });
+    });
+  }
 
   void _incrementCounter() {
     setState(() {
