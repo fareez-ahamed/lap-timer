@@ -90,11 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: new Text(widget.title),
       ),
       body: new ListView(
-        children: _laps.map((lap) => new LapWidget(lap)).toList() 
-        // padding: new EdgeInsets.all(8.0),
-        // itemBuilder: (BuildContext context, int index) {
-        //   return new Text();
-        // },
+              children: _laps.map((lap) => new LapWidget(lap)).toList() 
       ),
       floatingActionButton: new FloatingActionButton(
         onPressed: completeLap,
@@ -136,7 +132,5 @@ class LapWidget extends StatelessWidget {
       subtitle: new Text(_lap.lapName())
     );
   }
-
-
 
 }
