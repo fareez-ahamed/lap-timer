@@ -1,6 +1,6 @@
-# timekeeper
+# lap-timer
 
-A new Flutter project.
+Lap Timer mobile app
 
 ## Getting Started
 
